@@ -5,7 +5,7 @@
 
 # German CV Template for LaTeX.
 
-This is a clean and modern, yet more conventional LaTeX template for a German CV. It's primarily based on [latex-ninja's](https://github.com/latex-ninja) awesome [template](https://github.com/latex-ninja/simple-hipstercv) using the darkhipster flavor.
+This is a clean and modern, yet more conventional LaTeX template for a German CV. It's primarily based on [latex-ninja's](https://github.com/latex-ninja) awesome [template](https://github.com/latex-ninja/simple-hipstercv) using the darkhipster flavour.
 
 The sample profile picture was created using the [random user generator](https://randomuser.me/photos), the LaTeX logo was downloaded and used as is from [icons-icons](https://icon-icons.com/de/symbol/latex-logo/145115) based on CC BY 4.0.
 
