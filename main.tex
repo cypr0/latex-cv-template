@@ -4,7 +4,7 @@
 
 \documentclass[darkhipster]{simplehipstercv}
 % available options are: darkhipster, lighthipster, pastel, allblack, grey, verylight, withoutsidebar
-% withoutsidebar
+
 \usepackage[utf8]{inputenc}
 \usepackage[default]{raleway}
 \usepackage[margin=1cm, a4paper]{geometry}
@@ -42,7 +42,9 @@
 
 
 \thispagestyle{empty}
-%-------------------------------------------------------------
+%------------------------------------------------------------- Content
+
+%------------------------------------------------ Header
 
 \section*{Start}
 
@@ -50,7 +52,7 @@
 
 
 
-%------------------------------------------------
+%------------------------------------------------ Sidebar
 
 % this has to be here so the paracols starts..
 \subsection*{}
@@ -66,6 +68,7 @@
 
 % 0.9,0.9,0.9 -- 0.8,0.8,0.8
 
+%-------------------------------------------- Profile Picture
 
 \footnotesize
 {\setasidefontcolour
@@ -74,12 +77,16 @@
     \roundpic{./images/sample_profilepic.jpg}
 \end{center}
 
+%-------------------------------------------- Profile
+
 \bg{cvgreen}{white}{Profil}\\[0.5em]
 
 {\footnotesize
 \lorem
 }
 \bigskip
+
+%-------------------------------------------- Personal Info
 
 \bg{cvgreen}{white}{Persönliches} \\[0.5em]
 John Jacon Doe
@@ -89,6 +96,8 @@ Nationalität: Deutsch
 Geburtsdatum: 01.01.2000
 
 \bigskip
+
+%-------------------------------------------- Strengths
 
 \bg{cvgreen}{white}{Stärken} \\[0.5em]
 
@@ -105,6 +114,8 @@ Geburtsdatum: 01.01.2000
 
 \bigskip
 
+%-------------------------------------------- Interests
+
 \bg{cvgreen}{white}{Interessen}\\[0.5em]
 
 Interesse 1
@@ -119,6 +130,8 @@ Interesse 3
 Interesse 4
 
 \bigskip
+
+%-------------------------------------------- Language skills
 
 \bg{cvgreen}{white}{Fremdsprachen}\\[0.5em]
 
@@ -139,6 +152,8 @@ Interesse 4
 }
 %-----------------------------------------------------------
 \switchcolumn
+
+%-------------------------------------------- Professional experience
 
 \small
 \section*{Berufserfahrung}
@@ -175,6 +190,8 @@ Interesse 4
 
 \small
 
+%-------------------------------------------- Education
+
 \section*{Ausbildung}
 \begin{tabular}{r| p{0.5\textwidth} c}
     \cvevent{01/1985 -- 01/1990}{Master of Arts}{Template University}{Musterstadt \color{cvred}}
@@ -185,6 +202,8 @@ Interesse 4
     }{./images/latex_logo.png} \\
 \end{tabular}
 \vspace{1.0em}
+
+%-------------------------------------------- Additional Information (Trainings, Speeches, etc.)
 
 \begin{minipage}[t]{0.3\textwidth}
     \section*{Letzte Fortbildungen}
