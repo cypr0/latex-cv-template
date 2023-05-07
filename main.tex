@@ -1,0 +1,223 @@
+% a mashup of hipstercv, friggeri and twenty cv
+% https://www.latextemplates.com/template/twenty-seconds-resumecv
+% https://www.latextemplates.com/template/friggeri-resume-cv
+
+\documentclass[darkhipster]{simplehipstercv}
+% available options are: darkhipster, lighthipster, pastel, allblack, grey, verylight, withoutsidebar
+% withoutsidebar
+\usepackage[utf8]{inputenc}
+\usepackage[default]{raleway}
+\usepackage[margin=1cm, a4paper]{geometry}
+
+\renewcommand{\paracolbackgroundoptions}{% Added<<<< <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+\backgroundcolor{c[0](28pt,10.5pt)(0.5\columnsep,4pt)}[rgb]{0.25,0.25,0.25}%{0.9,0.9,0.9}
+\backgroundcolor{c[1](0.5\columnsep,4pt)(4pt,4pt)}[rgb]{1,1,1}
+\backgroundcolor{C[0](10000pt,10000pt)(0.5\columnsep,10000pt)}[rgb]{0.25,0.25,0.25}%{0.9,0.9,0.9}
+\backgroundcolor{C[1](0.5\columnsep,10000pt)(10000pt,10000pt)}[rgb]{1,1,1}
+}
+
+%------------------------------------------------------------------ Variablen
+
+\newlength{\rightcolwidth}
+\newlength{\leftcolwidth}
+\setlength{\leftcolwidth}{0.23\textwidth}
+\setlength{\rightcolwidth}{0.75\textwidth}
+
+%------------------------------------------------------------------ Metadata
+\title{Lebenslauf John Jacob Doe}
+\author{\LaTeX{} John Jacob Doe}
+\date{May 2023}
+
+\hypersetup{
+    pdftitle	= {CV},
+    pdfauthor   = {John Jacob Doe},
+    pdfsubject	= {CV / Lebenslauf John Jacob Doe},
+    pdfcreator	= {LaTeX},
+    pdfproducer	= {LaTeX}
+}
+
+\pagestyle{empty}
+\sffamily
+\begin{document}
+
+
+\thispagestyle{empty}
+%-------------------------------------------------------------
+
+\section*{Start}
+
+\simpleheader{headercolour}{John Jacob}{Doe}{Chief Template Officer}{white}
+
+
+
+%------------------------------------------------
+
+% this has to be here so the paracols starts..
+\subsection*{}
+\vspace{4em}
+
+\setlength{\columnsep}{1.5cm}
+\columnratio{0.23}[0.75]
+\begin{paracol}{2}
+\hbadness5000
+%\backgroundcolor{c[1]}[rgb]{1,1,0.8} % cream yellow for column-1 %\backgroundcolor{g}[rgb]{0.8,1,1} % \backgroundcolor{l}[rgb]{0,0,0.7} % dark blue for left margin
+
+\paracolbackgroundoptions
+
+% 0.9,0.9,0.9 -- 0.8,0.8,0.8
+
+
+\footnotesize
+{\setasidefontcolour
+\flushright
+\begin{center}
+    \roundpic{./images/sample_profilepic.jpg}
+\end{center}
+
+\bg{cvgreen}{white}{Profil}\\[0.5em]
+
+{\footnotesize
+\lorem
+}
+\bigskip
+
+\bg{cvgreen}{white}{Persönliches} \\[0.5em]
+John Jacon Doe
+
+Nationalität: Deutsch 
+
+Geburtsdatum: 01.01.2000
+
+\bigskip
+
+\bg{cvgreen}{white}{Stärken} \\[0.5em]
+
+\textbf{Superpower 1} (Eine kurzes Beispiel)
+
+\smallskip
+\textbf{Superpower 2} (Ein weiteres Beispiel)
+
+\smallskip
+\textbf{Superpower 3} (Noch ein Beispiel)
+
+\smallskip
+\textbf{Superpower 4} (Und das letzte Beispiel)
+
+\bigskip
+
+\bg{cvgreen}{white}{Interessen}\\[0.5em]
+
+Interesse 1
+
+\smallskip
+Interesse 2
+
+\smallskip
+Interesse 3
+
+\smallskip
+Interesse 4
+
+\bigskip
+
+\bg{cvgreen}{white}{Fremdsprachen}\\[0.5em]
+
+\textbf{Englisch} C2 \pictofraction{\faCircle}{cvgreen}{3}{cvgreen}{1}{\tiny} \\
+\smallskip
+\textbf{Spanisch} C1 \pictofraction{\faCircle}{cvgreen}{2}{black!30}{2}{\tiny} \\
+\smallskip
+\textbf{Französisch} B1 \pictofraction{\faCircle}{cvgreen}{1}{black!30}{3}{\tiny}
+
+\vspace{6em}
+
+%\infobubble{\faLinkedin}{cvgreen}{white}{jjdoe}
+%\infobubble{\faGithub}{cvgreen}{white}{jjdoe}
+
+%\phantom{turn the page}
+
+%\phantom{turn the page}
+}
+%-----------------------------------------------------------
+\switchcolumn
+
+\small
+\section*{Berufserfahrung}
+
+\begin{tabular}{r| p{0.5\textwidth} c}
+    \cvevent{Seit 01/2000}{Chief Template Officer}{Template GmbH}{Musterstadt \color{cvred}}
+    {\begin{itemize}
+        \item \lorem
+        \item \lorem
+    \end{itemize}
+    \smallskip
+    \textbf{Schlüsselerfolg:} \lorem
+    }{./images/latex_logo.png} \\
+    \cvevent{01/1990 -- 01/2000}{Template Architekt}{Vorlage AG}{Musterstadt \color{cvred}}
+    {\begin{itemize}
+        \item \lorem
+        \item \lorem
+    \end{itemize}
+    \smallskip
+    \textbf{Schlüsselerfolg:} \lorem
+    }{./images/latex_logo.png} \\
+\end{tabular}
+\vspace{1.0em}
+
+%\end{paracol}
+
+%\newpage
+%\begin{paracol}{2}
+%\hbadness5000
+    
+%\paracolbackgroundoptions
+%-----------------------------------------------------------
+%\switchcolumn
+
+\small
+
+\section*{Ausbildung}
+\begin{tabular}{r| p{0.5\textwidth} c}
+    \cvevent{01/1985 -- 01/1990}{Master of Arts}{Template University}{Musterstadt \color{cvred}}
+    {\begin{itemize}
+        \item \lorem
+        \item \lorem
+    \end{itemize}
+    }{./images/latex_logo.png} \\
+\end{tabular}
+\vspace{1.0em}
+
+\begin{minipage}[t]{0.3\textwidth}
+    \section*{Letzte Fortbildungen}
+    \begin{tabular}{>{\footnotesize\sbseries}r >{\footnotesize}p{0.55\textwidth}}
+        2023 & Template Creation in 5 minutes (Temp Ltd.)\\
+        2023 & Learning LaTeX with ease (Temp Ltd.)\\
+        2022 & Essentials of Template Design (Temp Ltd.) \\
+    \end{tabular}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.3\textwidth}    
+    \section*{Letzte Vorträge}
+    \begin{tabular}{>{\footnotesize\sbseries}r >{\footnotesize}p{0.55\textwidth}}
+        Mai 2023 & Creating templates with LaTeX, \emph{LaTeXMeX}, Musterstadt. \\
+        Mai 2022 & How cool templates can be?, \emph{Templateshare 2022}, Musterstadt.
+    \end{tabular}
+\end{minipage}\hfill
+\vspace{0.5em}
+
+\vfill{} % Whitespace before final footer
+
+%----------------------------------------------------------------------------------------
+%	FINAL FOOTER
+%----------------------------------------------------------------------------------------
+\setlength{\parindent}{0pt}
+\begin{minipage}[t]{\rightcolwidth}
+\begin{center}\fontfamily{\sfdefault}\selectfont \color{black!70}
+{\footnotesize John Doe \icon{\faMapMarker}{cvgreen}{} Musterstraße  1 ~|~ 12345 Musterstadt \icon{\faMobile}{cvgreen}{} +49 123 456 789  \icon{\faEnvelope}{cvgreen}{} \protect\href{mailto:jjdoe@email.invalid}{jjdoe@email.invalid}
+}
+\end{center}
+\end{minipage}
+
+\clearpage
+
+\end{paracol}
+
+\end{document}
